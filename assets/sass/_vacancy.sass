@@ -1,0 +1,133 @@
+.vacancy
+	padding: 150px 0 80px 0
+
+	background: url(../img/vacancy-bg.png) top 200px left 10px no-repeat 
+	background-size: 100%
+
+	&__title
+		margin-bottom: 20px
+
+		text-align: left
+		
+	&__subtitle
+		margin-bottom: 40px
+
+		font-size: 18px
+		font-weight: 400
+
+		span
+			color: #a6a8aa
+		
+		a
+			color: #71bbac
+
+	&__text
+		margin-bottom: 20px
+
+		font-size: 25px
+		font-weight: 400
+
+	&__col 
+		&:last-child
+			margin-left: 8px
+
+	&__item
+		min-height: 138px
+		margin-bottom: 15px
+		padding: 30px
+
+		box-shadow: 0 5px 30px rgba(195, 200, 221, 0.34)
+		border-radius: 6px
+		background-color: #ffffff
+
+		cursor: pointer
+
+		&:last-child
+			margin-bottom: 0
+
+	&__top
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding-right: 5px
+
+		&-title
+			margin-bottom: 11px
+
+			color: #000000
+			font-size: 25px
+			+bold
+
+		&-subtitle
+			max-width: 530px
+			line-height: 25px
+
+	.more-button 
+		color: #32bcad
+
+		+trs
+
+		.next
+			fill: #32bcad
+
+		&.active
+			.next 
+				transform: rotate(90deg)
+
+	&__bottom
+		margin-top: 30px
+		line-height: 25px
+
+		.exp
+			margin-bottom: 27px
+
+			span
+				color: #a2a6b1
+
+		p 
+			max-width: 1023px
+			margin-bottom: 26px
+
+		&-wrapper 
+			display: flex
+			justify-content: space-between
+
+		&-item
+			margin-bottom: 29px
+		
+		&-title 
+			margin-bottom: 10px
+			
+			+bold
+			font-weight: 900
+
+		li
+			position: relative
+			margin-left: 19px
+			margin-bottom: 7px
+			line-height: 1.1
+
+			&:last-child
+				margin-bottom: 0
+
+			&:before
+				content: ''
+				position: absolute
+				left: -21px
+				top: 50%
+
+				transform: translatey(-50%)
+				width: 14px
+				height: 14px
+				margin-right: 15px
+		
+				background: url(../img/check.png) center / contain no-repeat 
+
+
+
+
+
+
+
+
+

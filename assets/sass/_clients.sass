@@ -1,0 +1,404 @@
+.clients
+	position: relative
+	top: -10px
+
+	padding: 150px 0 87px 0
+	min-height: 1032px
+
+	background: url(../img/clients-bg.png) center no-repeat 
+	background-size: cover
+
+	&-map
+		width: 100%
+		height: 100%
+
+		background-position: right 10px center 
+		background-repeat: no-repeat
+		background-size: contain
+
+		&__button
+			display: none
+
+		&-wrapper
+			position: relative
+			z-index: 3
+
+			width: 100%
+			max-width: 1700px
+			margin: 0 auto
+			// padding: 100px 0
+			// width: 1674px
+			height: 1389px
+			// overflow: hidden
+
+			.clients-map__item
+				&[data-target="tab-3"]
+					display: none
+
+			.container
+				width: 100%
+				height: 100%
+
+			&__title
+				display: none
+				margin-bottom: 40px
+
+		&__item 
+			position: absolute
+			display: inline-block
+
+			.clients-projects__left,
+			.clients-projects__right
+				display: none
+
+			&.c-1
+				left: 951px
+				top: 766px
+
+			&.c-2
+				left: 975px;
+				top: 743px;
+
+			&.c-3
+				left: 916px;
+				top: 770px;
+
+			&.c-4
+				left: 955px;
+				top: 705px;
+
+			&.c-5
+				left: 1005px
+				top: 705px
+
+			&.c-6
+				left: 1081px;
+				top: 808px;
+
+			&.c-7
+				left: 1094px;
+				top: 748px;
+
+			&.c-8
+				left: 1085px
+				top: 999px
+
+			&.c-9
+				left: 1055px;
+				top: 941px;
+
+			&.c-10
+				left: 1159px
+				top: 915px
+
+			&.c-11
+				left: 936px
+				top: 800px
+
+			&.c-12
+				left: 1179px
+				top: 667px
+
+			&.c-13
+				left: 1010px;
+				top: 775px;
+
+			&.c-14
+				left: 1122px
+				top: 957px
+
+			&.c-15
+				left: 184px
+				top: 133px
+
+			&.c-16
+				left: 580px
+				top: 85px
+
+			&.c-17
+				left: 694px
+				top: 226px
+
+			&.c-18
+				left: 472px
+				top: 141px
+
+			&.c-19
+				left: 469px
+				top: 737px
+
+			&.c-20
+				left: 1481px
+				top: 1050px
+
+			&.c-21
+				left: 1060px
+				top: 711px
+
+			&.c-22
+				left: 1627px
+				top: 975px
+
+			&.c-23
+				left: 1330px
+				top: 1166px
+
+			&.c-24
+				left: 1025px
+				top: 798px
+
+			&.c-25
+				left: 1575px
+				top: 900px
+						
+			&-text
+				opacity: 0
+
+				position: absolute
+				left: 50%
+				top: 0
+
+				z-index: 2
+				visibility: hidden
+
+				transform: translate(-50%, -100%)
+				width: 100%
+				min-width: 387px
+				min-height: 162px
+				padding: 20px
+					
+				box-shadow: 0 3px 22px rgba(143, 155, 159, 0.36)
+				border-radius: 6px
+				background: #ffffff
+
+				+trs
+
+				&:after
+					content: ''
+					position: absolute
+					left: 50%
+					bottom: 0
+					z-index: 1
+					transform: translate(-50%, 50%) rotate(45deg)
+
+					width: 16px
+					height: 16px
+					background: #ffffff
+
+			&-title
+				padding: 30px 26px
+
+				border-radius: 6px
+				border: 2px dashed #e6a430
+
+				font-size: 20px
+				font-weight: 400
+				text-align: center
+
+			&-icon
+				position: relative
+				// z-index: 1
+					
+				cursor: pointer
+
+				img 
+					position: absolute
+					left: 50%
+					top: 2px
+					z-index: 0
+					transform: translateX(-50%)
+						
+					cursor: pointer
+
+					&:hover
+						.clients-map__item-text
+							z-index: 1
+							opacity: 1
+							visibility: visible
+
+						.marker
+							fill: #e0a132
+								
+				&:hover
+					.clients-map__item-text
+						z-index: 1
+						opacity: 1
+						visibility: visible
+
+					.marker
+						fill: #e0a132
+
+		&__tabs
+			display: none
+			flex-wrap: wrap
+			justify-content: center
+			margin-bottom: 25px
+
+			button
+				min-width: 150px
+				padding: 0 10px
+				height: 36px
+				display: flex
+				justify-content: center
+				align-items: center
+				margin: 0 8px 8px 8px
+					
+				background: transparent
+				border: 1px solid $green
+				border-radius: 4px
+					
+				color: $green
+				+bold
+
+				+trs
+		
+				&:not(.active):hover
+					color: #ffffff
+					background: lighten($green, 15%)
+							
+				&.active
+					background: $green
+					color: #ffffff
+
+	&__title
+		margin-bottom: 24px
+
+	&__subtitle
+		max-width: 1012px
+		margin: 0 auto
+		margin-bottom: 40px
+
+		text-align: center
+
+	&__slider
+		min-height: 530px
+			
+		margin: 0 52px
+		padding: 50px 30px
+
+		&-title 
+			margin-bottom: 43px
+
+			text-align: center
+			font-size: 25px
+			+bold
+
+	.projects-slider
+		&__item
+			max-width: 301px
+			margin-left: auto
+			margin-right: auto
+			padding: 0
+
+		&__img
+			height: 238px
+			margin-bottom: 20px
+
+		&__title 
+			font-size: 18px
+			font-weight: 700
+			line-height: 20px
+			text-align: center
+			
+	.slide-prev-feedback
+		transform: translate(-98%, -52%) rotate(180deg)
+
+		.prev 
+			transform: translate(5px, -5px) rotate(180deg)
+
+	.slide-next-feedback
+		transform: translate(98%, -50%)
+
+	.slide-prev-feedback, .slide-next-feedback
+		background: url(../img/clients-slider-arrow.png) center no-repeat
+
+	.swiper-pagination
+		bottom: 24px
+
+		&-bullet
+			background-color: #e9ecf3
+
+	&__button
+		width: 283px
+		height: 50px
+		margin: 40px auto 0 auto
+
+		font-size: 16px
+		font-weight: 700
+			
+		box-shadow: 0 15px 15px rgba(170, 120, 33, 0.5)
+		border-radius: 25px
+		background-color: #e6a430
+
+		+trs
+
+		&:hover
+			background: darken(#e6a430, 7%)
+
+	&-projects
+		padding: 120px 0
+			
+		background: #fff url(../img/clients-projects-bg.png) top no-repeat
+		background-size: cover
+
+		&__title
+			margin-bottom: 20px
+			text-align: left
+				
+		&__left
+			width: 548px
+			height: 284px
+
+			background-repeat: no-repeat
+			background-position: center
+			background-size: cover
+
+		&__right
+			margin-left: 35px
+			max-width: 551px
+			padding: 24px 30px 30px 0
+
+		&__item 
+			display: flex
+			min-height: 284px
+			margin-bottom: 28px
+				
+			box-shadow: 0 5px 30px rgba(195, 200, 221, 0.34)
+			border-radius: 6px
+			background-color: #ffffff
+
+			+trs
+
+			&:hover
+				background: darken(#fff, 4%)
+
+			&-title
+				margin-bottom: 16px
+
+				+bold
+				font-size: 25px
+				font-weight: 700
+
+			&-subtitle
+				margin-bottom: 15px
+
+				font-size: 20px
+				font-weight: 700
+
+			&-text
+				margin-bottom: 10px
+
+				font-size: 16px
+				font-weight: 400
+
+			&-small
+				margin-bottom: 30px
+
+				color: #a6a8aa
+				font-size: 16px
+				font-weight: 400
+
+
+
+
+

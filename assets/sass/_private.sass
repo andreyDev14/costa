@@ -1,0 +1,92 @@
+.private
+	margin-bottom: 88px
+	padding-top: 100px
+
+	&__title
+		margin-bottom: 70px
+
+	&-wrapper
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+	&__item
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 100%
+		max-width: 357px
+		margin-bottom: 43px
+
+		cursor: pointer
+
+		&-icon
+			position: relative
+
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 91px
+			height: 88px
+			margin-bottom: 15px
+
+			border-radius: 6px
+			background-color: $blue
+
+			svg
+				fill: #fff
+
+		&-title
+			max-width: 326px
+
+			text-align: center
+			font-size: 23px
+			font-weight: 400
+
+		&-block
+			position: absolute
+			left: 50%
+			bottom: 40px
+			z-index: -1
+
+			transform: translate(-50%, 0%)
+			width: 384px
+			min-height: 210px
+			padding: 21px
+
+			opacity: 0
+
+			box-shadow: 0 3px 7px rgba(143, 155, 159, 0.22)
+			background: #ebf6f9
+
+			+trs
+
+			&:after
+				content: ''
+				position: absolute
+				left: 50%
+				bottom: 0
+
+				transform: translate(-50%, 50%) rotate(45deg)
+				width: 14px
+				height: 14px
+				background: #ebf6f9
+
+		&-text
+			padding: 20px 27px
+
+			color: #436978
+			font-size: 16px
+			font-weight: 400
+			line-height: 1.2
+
+			border-radius: 6px
+			border: 2px dashed $green
+
+		&:hover
+			.private__item-block
+				z-index: 2
+				opacity: 1
+
+
+

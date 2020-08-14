@@ -1,0 +1,190 @@
+.number
+	&__title
+		margin-bottom: 80px
+
+	&-wrapper
+		display: flex
+		justify-content: space-between
+
+		&-first 
+			margin-bottom: 20px
+
+	&__left
+		min-width: 455px
+		margin-right: 29px
+
+	&__right
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: flex-start
+		height: 100%
+
+		.number 
+			&__item
+				&:nth-child(1)
+					border: 2px solid #ffe8c4
+					box-shadow: 0 5px 30px rgba(195, 200, 221, 0.34)
+					
+					.number
+						&__item
+							&-title
+								color: #fba51a
+
+							&-count
+								border: 2px dashed #fba51a
+								
+								&-bg
+									background-color: #fba51a
+
+				&:nth-child(2)
+					box-shadow: 0 5px 30px rgba(195, 200, 221, 0.34)
+					border: 2px solid #cbfcf7
+
+					.number
+						&__item
+							&-title
+								color: #32bcad
+
+							&-count
+								border: 2px dashed #32bcad
+								
+								&-bg
+									background-color: #32bcad
+
+				&:nth-child(3)
+					box-shadow: 0 5px 30px rgba(195, 200, 221, 0.34)
+					border: 2px solid #eef59a
+					
+					.number
+						&__item
+							&-title
+								color: #c1ce24
+
+							&-count
+								border: 2px dashed #ceda42
+												
+								&-bg
+									background-color: #ceda42
+
+				&:nth-child(4)
+					box-shadow: 0 5px 30px rgba(195, 200, 221, 0.34)
+					border: 2px solid #dbdcdd
+
+					.number
+						&__item
+							&-title
+								color: #bbbbbb
+
+							&-count
+								border: 2px dashed #dbdcdd
+												
+								&-bg
+									background-color: #dbdcdd
+
+									span
+										color: #9da1a5
+										font-weight: 700
+
+				&-count
+					transform: translatey(-36%) rotate(45deg)
+
+				&-bottom
+					margin-top: -10px
+					width: 100%
+
+	&__item
+		position: relative
+		width: 100%
+		max-width: 311px
+		// min-height: 266px 
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-right: 28px
+		margin-bottom: 52px
+		padding: 0 16px
+		padding-bottom: 30px
+		
+		border-radius: 6px
+
+		&:nth-child(2n)
+			margin-right: 0
+
+		&-count
+			width: 88px
+			height: 88px
+			display: flex
+			justify-content: center
+			align-items: center
+			padding: 8.5px
+			border: 2px dashed #0073bb
+
+			transform: rotate(45deg)
+			
+			&-bg
+				width: 100%
+				height: 100%
+				background-color: #00adef
+
+				span
+					position: absolute
+					left: 50%
+					top: 50%
+					transform: translate(-50%, -50%) rotate(-45deg)
+
+					color: #ffffff
+					font-size: 30px
+					font-weight: 700
+
+		&-title
+			margin-bottom: 11px
+
+			font-size: 22px
+			font-weight: 700
+			text-align: center
+
+		&-text
+			text-align: center
+
+	&__left
+		.number
+			&__item
+				&_big
+					max-width: 455px
+					min-height: 584px
+					padding: 60px 30px 10px 30px
+					padding-bottom: 140px
+					box-shadow: 0 5px 30px rgba(195, 200, 221, 0.34)
+					border: 2px solid #d9f0f9
+
+					background: url(../img/number-item-bg.png) bottom 35px center  no-repeat 
+
+					.number
+						&__item
+							&-title
+								color: #0aaeef
+								font-size: 25px
+
+							&-count
+								margin-bottom: 55px
+
+							&-bottom
+								width: 100%
+
+	&-wrapper-second 
+		.number__item
+			&-left
+				max-width: 455px
+
+			&-right 
+				max-width: 650px
+				min-height: 239px
+		
+
+
+
+
+
+
+

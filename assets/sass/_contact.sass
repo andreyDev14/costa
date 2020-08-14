@@ -1,0 +1,210 @@
+
+.contact
+	position: relative
+	z-index: 1
+
+	min-height: 471px
+	
+	overflow: hidden
+
+	.map
+		position: absolute
+		right: 0
+		top: 0
+		z-index: 1
+		
+		width: 49.84%
+		height: 100%
+		margin-bottom: 0
+	
+		overflow: hidden
+	
+	&__right
+		position: relative
+
+		display: flex
+		justify-content: flex-end
+		flex-direction: column
+		align-items: flex-start
+
+		width: 100%
+		max-width: 39.5%
+		margin-right: auto
+		padding-top: 50px
+
+		text-align: left
+
+		&:after
+			content: ''
+			position: absolute
+			right: 0
+			top: 50%
+
+			width: 345px
+			height: 345px
+			transform: translate(112%, -39%)
+
+			background: url(../img/contact-after.png) center no-repeat 
+		
+	&__title
+		font-size: 38px
+		font-weight: 800
+		+bold
+		text-align: left
+		line-height: 1
+
+	&__subtitle
+		margin-bottom: 23px
+		font-size: 18px
+		font-weight: 500
+
+	&__tel
+		margin-bottom: 17px
+		margin-left: 0px
+
+		color: $green
+		+bold
+		font-size: 26px
+		font-weight: 700
+		
+		+trs
+		
+		.phone
+			width: 17px
+			height: 17px
+
+			fill: $green
+
+			+trs
+
+		&:hover
+			color: darken($green, 6%)
+
+			.phone
+				fill: darken($green, 6%)
+
+	&__form
+		&-title
+			margin-bottom: 9px
+
+			font-size: 18px
+			+bold
+
+		.input-wrapper
+			display: flex
+			justify-content: space-between
+
+			margin-bottom: 10px
+
+		span
+			width: 100%
+			max-width: 218px
+
+			input
+				width: 100%
+				height: 45px
+				padding-left: 18px
+
+				font-size: 14px
+				font-weight: 500
+
+				border-radius: 5px 3px 3px
+				border: 1px solid $green
+				background: #ffffff
+
+				&::placeholder
+					font-size: 14px
+					font-weight: 500
+
+		textarea 
+			width: 100%
+			height: 105px
+			margin-bottom: 7px
+			padding: 10px 10px 10px 18px
+
+			font-size: 14px
+			font-weight: 500
+			color: #000000
+			background: #ffffff
+			
+			border-radius: 5px 3px 3px
+			border: 1px solid $green
+
+			resize: none
+
+			&::placeholder
+				padding-top: 30px
+
+				font-size: 14px
+				font-weight: 500
+				color: #000000
+		
+		.submit-button
+			width: 190px
+			margin-right: 20px
+
+			input
+				width: 100%
+				height: 45px
+				border-radius: 22.5px
+				line-height: 1
+
+				border-radius: 20px
+				background-color: #77cbba
+
+				color: #ffffff
+				font-size: 16px
+				+bold
+				line-height: 20px
+
+		small
+			display: block
+			max-width: 288px
+			
+			font-size: 12px
+			font-weight: 300
+			vertical-align: middle
+		
+		&-bottom
+			display: flex
+			align-items: center
+
+.block-404
+	min-height: 868px
+	padding-top: 180px
+
+	background: url(../img/404-bg.png) center no-repeat 
+
+	&-wrapper
+		display: flex
+		flex-direction: column
+		align-items: center
+
+	&__img 
+		margin-bottom: 40px
+
+	&__title
+		margin-bottom: 44px
+
+		color: #434c5d
+		font-size: 28px
+		font-weight: 400
+
+	&__button
+		width: 248px
+		height: 50px
+
+		color: #ffffff
+		font-size: 18px
+		font-weight: 700
+		line-height: 20px
+
+		box-shadow: 0 15px 15px rgba(170, 120, 33, 0.5)
+		border-radius: 25px
+		background-color: #e6a430
+
+		+trs
+
+		&:hover
+			background: darken(#e6a430, 7%)
+		// background-color: #77cbba

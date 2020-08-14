@@ -1,0 +1,180 @@
+.page
+	&__bg
+		margin-bottom: 30px
+
+	&__img
+		width: 1135px
+		height: 505px
+
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		border-radius: 4px
+
+	&-block
+		padding-bottom: 135px
+
+		background: url(../img/page-bg.png) bottom no-repeat 
+		background-size: 91%
+
+		&__title
+			margin-bottom: 20px
+
+		&__text
+			padding: 18px
+
+			box-shadow: 0 5px 30px rgba(72, 79, 104, 0.19)
+			border-radius: 6px
+
+			background: #ffffff
+
+			p
+				margin-bottom: 12px
+
+				font-size: 16px
+				font-weight: 400
+
+				&:last-child
+					margin-bottom: 0
+
+		&-wrapper
+			padding: 20px
+
+			border-radius: 6px
+			border: 2px dashed $green
+			background: #ffffff
+
+		&__button
+			display: block
+			width: 277px
+			margin: 50px auto 0 auto
+			height: 50px
+			
+			box-shadow: 0 15px 15px rgba(170, 120, 33, 0.5)
+			border-radius: 25px
+			background-color: #e6a430
+
+			font-size: 16px
+			+bold
+
+			+trs
+
+			&:hover
+				background: darken(#e6a430, 7%)
+
+.crumbs
+	margin: 60px 0 45px 0
+
+	ul
+		display: flex
+		align-items: center
+
+		li
+			position: relative
+
+			margin-right: 30px
+
+			color: #a6a8aa
+			font-size: 15px
+			font-weight: 400
+
+			border-bottom: 2px dashed #a6a8aa
+
+			+trs
+
+			a
+				cursor: default
+
+			&:not(:last-child):hover
+				color: $green
+				border-color: $green
+				
+				a
+					cursor: pointer
+
+			&:after
+				content: '/'
+				position: absolute
+				right: -30px
+				top: 50%
+				transform: translatey(-50%)
+
+				margin: 0 9px
+
+				color: #e8e8e8
+				font-size: 15px
+				font-weight: 400
+				border: none
+
+			&:last-child
+				margin-right: 0
+
+				color: #000000
+				font-size: 15px
+				font-weight: 400
+				border: none
+
+				&:after
+					display: none
+
+.map
+	margin-bottom: 115px
+	height: 481px
+ 
+.page-section
+	position: relative
+	z-index: 3
+
+	padding: 140px 0
+	padding-top: 150px
+	// margin-top: -20px
+
+	background: #F6F7FB url(../img/section-bg.jpg) center / cover no-repeat
+
+	&-bg
+		background: url(../img/page-section-bg-2.png) center no-repeat 
+
+	&-wrapper
+		display: flex
+
+	&__left
+		max-width: 550px
+		margin-top: 31px
+
+	h2
+		margin-bottom: 12px
+		
+		color: #000000
+		font-size: 37px
+		font-weight: 400
+
+	p
+		margin-bottom: 15px
+
+		font-size: 16px
+		font-weight: 400
+
+		&:last-child
+			margin-bottom: 0
+
+	&__right
+		width: 549px
+		height: 387px
+		margin-left: 43px
+
+		border-radius: 6px
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+
+
+
+
+
+
+
+
+
+
+
+

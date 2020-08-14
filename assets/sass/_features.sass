@@ -1,0 +1,123 @@
+.features
+	position: relative
+	top: -20px
+	z-index: 3
+
+	min-height: 735px
+	padding: 140px 0
+
+	background: url(../img/features-bg-2.png) top  no-repeat
+	background-size: cover
+
+	&-wrapper
+		display: flex
+		justify-content: space-between
+
+	&__item
+		display: flex
+		flex-direction: column
+		align-items: center
+
+		&-icon
+			height: 65px
+			margin-bottom: 9px
+
+			svg
+				fill: #9cd1c6 
+
+		&-title
+			max-width: 150px
+			min-height: 51px
+			margin-bottom: 52px
+
+			text-align: center
+			color: #000000
+			font-size: 15px
+			font-weight: 400
+
+		&-number
+			position: relative
+
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 120px
+			height: 130px
+			
+			background-size: contain
+			background-position: center
+			background-repeat: no-repeat
+
+			span
+				transform: translatey(-23px)
+				font-size: 25px
+				+bold
+				color: #ffffff
+
+			&:before
+				content: ''
+				position: absolute
+				left: 49.25%
+				top: 0
+
+				width: 2px
+				height: 51px
+				transform: translatey(-100%)
+
+				background: linear-gradient(to bottom, #fff, #75d9d1)
+
+		&:nth-child(2n)
+			flex-direction: column-reverse
+			transform: translatey(123px)
+			
+			.features
+				&__item
+					&-icon
+						margin-bottom: 0
+					
+					&-title
+						margin-bottom: 9px
+
+					&-number
+						&:before
+							content: ''
+							position: absolute
+							left: 49.25%
+							top: auto
+							bottom: 47px
+						
+							width: 2px
+							height: 51px
+							transform: translatey(100%)
+						
+							background: linear-gradient(to bottom, #78d4c7, #fff)
+
+		&:nth-child(2),
+		&:nth-child(6)
+			.features
+				&__item
+					&-number
+						&:before
+							background: linear-gradient(to bottom, #78d4c7, #fff)
+
+		&:nth-child(4)
+			.features
+				&__item
+					&-number
+						&:before
+							background: linear-gradient(to bottom, #78d4c7, #fff)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

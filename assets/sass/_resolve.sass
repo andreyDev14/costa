@@ -1,0 +1,116 @@
+.resolve
+	position: relative
+	z-index: 2
+
+	margin-top: 31px
+	margin-bottom: 150px
+
+	background: url(../img/resolve-bg.png) right 200px bottom no-repeat 
+	
+
+	&__title
+		margin-bottom: 67px
+
+	&-wrapper
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+
+	&__item
+		position: relative
+
+		width: 100%
+		max-width: 253.8px
+		min-height: 253.8px
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-right: 120px
+		border-radius: 4px
+
+		text-align: center
+
+		cursor: pointer
+
+		&:nth-child(3),
+		&:nth-child(5)
+			margin-right: 0
+
+		&:nth-child(4),
+		&:nth-child(5)
+			transform: translateY(-50px)
+
+		&-bg
+			position: absolute
+			left: 0
+			top: 0
+			z-index: -1
+
+			width: 100%
+			height: 100%
+			transform: rotate(45deg)
+			// transform-origin: center center
+
+			box-shadow: 0 5px 30px rgba(195, 200, 221, 0.34)
+			border: 4px solid #d6f0eb
+			background-color: #ffffff
+			border-radius: 4px
+
+			transition: all .5s ease-in-out
+
+		&-text
+			position: absolute
+			left: 50%
+			top: 45%
+
+			width: 100%
+			transform: translate(-50%, -50%)
+
+		&-title			
+			max-width: 235px
+			margin-left: auto
+			margin-right: auto
+
+			font-size: 16px
+			font-weight: 900
+
+		&-icon
+			margin-bottom: 12px
+
+
+		&:nth-child(2)
+			.resolve__item-icon
+				margin-bottom: 20px
+
+		&:nth-child(5)
+			.resolve__item-icon
+				margin-bottom: 40px
+				transform: translatey(30px)
+
+		&:hover
+			.resolve
+				&__item
+					&-bg
+						box-shadow: 0 25px 30px rgba(195, 200, 221, 0.65)
+						background-color: #e6a430
+						border: none
+
+					&-title
+						color: #ffffff
+
+					&-icon
+						fill: #fff
+
+.page-block.page-block-resolve
+	background: transparent url(../img/done-block-bg.png) bottom no-repeat 
+	background-size: auto
+
+.resolve-block-bg 
+	background: url(../img/resolve-header-bg.png) top 50px center  no-repeat 
+	
+	.crumbs
+		margin-top: 0
+		padding-top: 60px
+
+.page-block.page-block-resolve-2
+	background: url(../img/page-bg.png) bottom 40px center no-repeat

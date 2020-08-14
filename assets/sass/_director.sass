@@ -1,0 +1,65 @@
+.director 
+	padding-bottom: 95px
+
+	background: #f6f7fa url(../img/director-bg.png) center no-repeat 
+
+	&-wrapper
+		display: flex
+		justify-content: space-between
+
+	&__left 
+		min-width: 439px
+		min-height: 439px
+		margin-right: 110px
+		
+	&__img
+		width: 439px
+		height: 439px
+
+		border-radius: 50%
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+
+	&__right
+		padding-top: 85px
+
+	&__item
+		&-name
+			margin-bottom: 3px
+
+			color: #32bcad
+			font-size: 25px
+			+bold
+
+		&-pos
+			margin-bottom: 20px
+
+			color: #a6a8aa
+			font-size: 18px
+			font-weight: 400
+
+		&-text
+			position: relative
+
+			&:before
+				content: ''
+				position: absolute
+				left: -15px
+				top: 0
+
+				width: 54px
+				height: 42px
+				transform: translateX(-100%)
+
+				background: url(../img/quote.png) center no-repeat 
+				background-size: cover
+
+			p 
+				margin-bottom: 15px
+
+				&:last-child
+					margin-bottom: 0
+
+
+

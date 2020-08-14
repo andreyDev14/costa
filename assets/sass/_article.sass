@@ -1,0 +1,200 @@
+.article
+	&__title
+		margin-bottom: 50px
+
+	&__left
+		width: 370px
+		height: 310px
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+	
+	&__right
+		max-width: 63%
+		margin-left: 50px
+
+	&__item 
+		display: flex
+		margin-bottom: 50px
+		padding-bottom: 30px
+
+		border-bottom: 1px solid #ededed
+
+		&:last-child
+			padding-bottom: 0
+			border-bottom: none
+
+		&-title
+			margin-bottom: 10px
+
+			font-size: 23px
+			color: $green
+			+bold
+			line-height: 1.5
+			cursor: pointer
+
+			+trs
+
+			&:hover
+				color: darken($green, 8%)
+
+		&-wrapper
+			display: flex
+			align-items: center
+
+			padding-bottom: 15px
+
+			border-bottom: 1px solid #ededed
+
+		&-date, &-like 
+			position: relative
+			margin-right: 15px
+
+			font-size: 14px
+			color: #8c99a9
+
+			&:after
+				content: '|'
+				position: absolute
+				top: 50%
+				transform: translatey(-50%)
+				right: -10px
+
+				font-size: 20px
+				color: #8c99a9
+
+		&-like 
+			display: flex
+			align-items: center
+			cursor: pointer
+
+			+trs
+
+			span 
+				margin-left: 3px
+
+			&:hover
+				color: $blue
+
+				.heart
+					fill: $blue
+
+			&_active
+				color: $blue
+			
+				.heart
+					fill: $blue
+
+	&__text
+		margin: 15px 0 
+
+		p 
+			margin-bottom: 10px
+			color: #8c99a9
+
+			&:last-child
+				margin-bottom: 0
+
+	.more-button
+		.next
+			width: 14px
+			height: 14px
+
+.share-buttons-title
+	text-align: center
+	+bold 
+	margin: 20px 0
+
+.single-article		
+	padding: 0
+
+	.article
+		&__title
+			font-size: 30px
+			text-align: left
+			
+		&__item 
+			flex-direction: column
+			align-items: flex-start
+		
+		&__left 
+			width: 100%
+			height: auto
+			min-height: 330px
+			background-size: contain
+			background-position: left
+
+		&__right 
+			width: 100%
+			max-width: 100%
+			margin-left: 0
+			margin-top: 15px
+
+.share-buttons-wrapper
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+
+.st-custom-button
+	min-width: 120px
+	box-sizing: border-box
+	transition: opacity 0.2s ease-in, top 0.2s ease-in
+	border-radius: 4px
+	border: none
+	cursor: pointer
+	display: flex 
+	justify-content: center
+	align-items: center
+	
+	font-size: 11px
+	height: 32px
+	line-height: 32px
+	margin: 4px
+	padding: 0 8px
+	position: relative
+	text-align: center
+	top: 0
+	vertical-align: top
+	white-space: nowrap
+
+	span 
+		transition: all 0.2s ease-in
+		color: #fff
+		display: inline-block
+		font-weight: 500
+		letter-spacing: 0.5px
+		min-width: 60px
+		opacity: 1
+		padding: 0 6px
+		position: relative
+		vertical-align: top
+		color: #ffffff
+
+	img
+		height: 16px
+		width: 16px
+
+	&[data-network='facebook']
+		background: #4267B2
+
+	&[data-network='whatsapp']
+		background: #25d366
+
+	&[data-network='vk']
+		background: #4c6c91
+
+	&[data-network='telegram']
+		background: #0088cc
+
+
+
+
+
+
+
+
+
+
+
+
+

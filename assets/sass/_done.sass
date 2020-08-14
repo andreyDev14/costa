@@ -1,0 +1,78 @@
+.done
+	position: relative
+
+	margin-bottom: 100px
+	padding-bottom: 70px
+
+	// background: #F6F7FA url(../img/done-bg-2.png) top 0px center no-repeat 
+	
+	&-bg
+		position: absolute
+		right: 0
+		top: -21px
+		width: 62%
+		height: 100%
+
+		background: #F6F7FA url(../img/done-bg-2.png) top 0px center no-repeat
+		background-size: cover
+
+		overflow: hidden 
+
+	&__img
+		position: absolute
+		left: 0
+		top: 0
+	
+		width: 40.6%
+		height: 915px
+	
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		background-color: #f6f7fa
+
+	&-wrapper
+		display: flex
+		justify-content: flex-end
+
+
+	&__right
+		max-width: 70%
+		padding-top: 92px
+
+	&__title
+		margin-bottom: 35px
+
+		text-align: left
+		
+
+	&__item
+		position: relative
+
+		width: 100%
+		max-width: 649px
+		margin-bottom: 30px
+		padding: 22px
+
+		border-radius: 6px
+		border: 2px dashed $green
+
+		&-wrapper
+			padding-left: 70px
+
+		&:before
+			content: ''
+			position: absolute
+			left: 0 
+			top: 50%
+			transform: translate(-100%, -50%)
+
+			width: 75px
+			height: 55px
+
+			background: url(../img/check-icon.png) center no-repeat 
+
+
+
+
+

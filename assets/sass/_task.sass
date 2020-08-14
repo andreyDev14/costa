@@ -1,0 +1,70 @@
+.task
+	padding-top: 100px
+	min-height: 1019px
+
+	background: url(../img/task-bg.png) top  no-repeat
+	background-size: cover 
+
+	&__title
+		margin-bottom: 30px
+
+	&-wrapper
+		display: flex
+		justify-content: space-between
+		margin-bottom: 90px
+
+	&__item
+		max-width: 552px
+
+		.page-block__text
+			p
+				position: relative
+				margin-left: 28px
+				
+				&:before
+					content: ''
+					position: absolute
+					left: -35px
+					top: 3px
+				
+					width: 17px
+					height: 17px
+					margin-right: 15px
+				
+					background: url(../img/check.png) center / contain no-repeat 
+
+.page-project
+	.feedback
+		&__left
+			padding-top: 23px
+			
+		&__item
+			justify-content: space-between
+			max-width: 100%
+			min-height: 362px
+			padding: 30px 30px 30px 80px
+
+			&:after
+				display: none
+			
+			&-text
+				position: relative
+
+				&:before
+					content: ''
+					position: absolute
+					left: -18px
+					top: 0
+
+					width: 40px
+					height: 31px
+
+					transform: translateX(-100%)
+
+					background: url(../img/quote.png) center no-repeat 
+
+		&__right
+			width: 389px
+			height: 302px
+
+		

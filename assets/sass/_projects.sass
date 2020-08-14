@@ -1,0 +1,81 @@
+.projects
+	padding: 130px 0
+
+	background: url(../img/projects-bg.png) center  no-repeat  
+
+	&__title
+		margin-bottom: 15px
+
+	&__slider
+		position: relative
+
+		margin: 0 67px
+		padding: 0 15px 
+		padding-bottom: 86px
+		box-shadow: 0 5px 30px rgba(195, 200, 221, 0.34)
+		border-radius: 6px
+		background-color: #ffffff
+
+		.swiper-container
+			margin-left: 3px
+			margin-right: 3px
+
+		&:after
+			content: ''
+			position: absolute
+			left: 0
+			bottom: -29px
+			width: 100%
+			height: 30px
+			background: url(../img/feedback-after-3.png) center no-repeat
+			background-size: 103%
+			opacity: .5
+
+	&-slider
+		&__item
+			max-width: 454px
+			// margin: 15px auto
+			padding: 30px 15px
+			box-sizing: content-box
+
+		&__img
+			width: 100%
+			height: 301px
+			margin-bottom: 50px
+
+			background-position: center
+			background-size: cover
+			background-repeat: no-repeat
+
+		&__title
+			margin-bottom: 12px
+
+			font-size: 25px
+			+bold
+			line-height: 20px
+
+		&__text
+			margin-bottom: 20px
+
+			font-size: 16px
+			font-weight: 400
+
+	.slide-prev-feedback, .slide-next-feedback
+		transform: translate(-100%, -50%) 
+
+	.slide-next-feedback
+			right: 2px
+			transform: translate(100%, -50%)
+
+			.next
+				transform: rotate(180deg) translate(8px, 5px)
+
+	.swiper-pagination
+		bottom: 25px
+
+		&-bullet
+			margin-right: 8px
+			background-color: #e9ecf3
+
+			&:last-child
+				margin-right: 0
