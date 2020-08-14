@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="assets/css/vendor.min.css">
+	<!-- Основной файл стилей -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Costa - информационные технологии в медицине</title>
+</head>
+
+<body>
+
+	<header id="header" class="header">
+		<div class="header-wrapper">
+			<div class="header__top-wrapper">
+				<div class="container">
+					<div class="header__top">
+						<a href="/" class="scroll logo-wrapper">
+							<img src="assets/img/logo.svg" alt="logo" width="164">
+						</a>
+						<div class="header__right">
+							<div class="header__right-top">
+								<div class="header__search">
+									<input type="search" placeholder="Поиск">
+									<svg class='search'>
+										<use xlink:href='assets/sprite.svg#search'></use>
+									</svg>
+								</div>
+								<div class="header__col header__col-first">
+									<a class="header__tel" href="tel:+78123200607">
+										<svg class='phone'>
+											<use xlink:href='assets/sprite.svg#phone'></use>
+										</svg>
+										<span>+7 (812) 320-06-07</span>
+									</a>
+									<div class="header__social">
+										<span>Мы в соц.сетях:</span>
+										<div class="header__social-icons">
+											<img src="assets/img/header/icons/inst.svg" alt="icon" width="19">
+											<img src="assets/img/header/icons/telegram.svg" alt="icon" width="20">
+											<img src="assets/img/header/icons/facebook.svg" alt="icon" width="20">
+										</div>
+									</div>
+								</div>
+								<div class="header__col">
+									<button class="button header__button modal__button">Связаться с нами</button>
+									<div class="header__request">
+										<svg class='question'>
+											<use xlink:href='assets/sprite.svg#question'></use>
+										</svg>
+										<span class="modal__button">Заявка в тех.поддержку</span>
+									</div>
+								</div>
+								<a href="#" class="menu-link">
+									<span class="menu-lines"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom-wrapper">
+				<div class="container">
+					<div class="header__bottom">
+						<ul class="menu header__menu">
+							<li>
+								<a href="company.html">
+									<img src="assets/img/header/icons/1.svg" class="header__menu-icon" alt="icon" width="19">
+									<span>О компании</span>
+								</a>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="product.html">
+									<img src="assets/img/header/icons/2.svg" class="header__menu-icon" alt="icon" width="25">
+									<span>Продукты</span>
+								</a>
+								<ul class="sub-menu">
+									<li><a href="product.html">МИС "Авиценна"</a></li>
+									<li><a href="product.html">Государственный регистр
+											больных сахарным диабетом региона</a></li>
+									<li><a href="product.html">Учет медицинских
+											свидетельств о рождении и смерти</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="clients.html">
+									<img src="assets/img/header/icons/3.svg" class="header__menu-icon" alt="icon" width="22">
+									<span>Проекты</span>
+								</a>
+							</li>
+							<li>
+								<a href="integration.html">
+									<img src="assets/img/header/icons/4.svg" class="header__menu-icon" alt="icon" width="22">
+									<span>Интеграция</span>
+								</a>
+							</li>
+							<li>
+								<a href="news.html">
+									<img src="assets/img/header/icons/5.svg" class="header__menu-icon" alt="icon" width="23">
+									<span>Новости</span>
+								</a>
+							</li>
+							<li>
+								<a href="contacts.html">
+									<img src="assets/img/header/icons/6.svg" class="header__menu-icon" alt="icon" width="20">
+									<span>Контакты</span>
+								</a>
+							</li>
+						</ul>
+						<div class="header__bottom_mobile">
+							<div class="header__search">
+								<input type="search" placeholder="Поиск">
+								<svg class='search'>
+									<use xlink:href='assets/sprite.svg#search'></use>
+								</svg>
+							</div>
+							<div class="header__col">
+								<a class="header__tel" href="tel:+78123200607">
+									<svg class='phone'>
+										<use xlink:href='assets/sprite.svg#phone'></use>
+									</svg>
+									<span>+7 (812) 320-06-07</span>
+								</a>
+								<div class="header__social">
+									<span>Мы в соц.сетях:</span>
+									<div class="header__social-icons">
+										<img src="assets/img/header/icons/inst.svg" alt="icon" width="19">
+										<img src="assets/img/header/icons/telegram.svg" alt="icon" width="20">
+										<img src="assets/img/header/icons/facebook.svg" alt="icon" width="12">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="crumbs">
+		<div class="container">
+			<ul itemscope='' itemtype='http://schema.org/BreadcrumbList'>
+				<li itemscope='' itemprop='itemListElement' itemtype='http://schema.org/ListItem'>
+					<a rel='nofollow' itemprop='item' href='#'>
+						<span itemprop='name'>Главная</span>
+						<meta itemprop='position' content='1'>
+					</a>
+				</li>
+				<li itemscope='' itemprop='itemListElement' itemtype='http://schema.org/ListItem'>
+					<a itemprop='item' href='#'>
+						<span itemprop='name'>Клиенты компании</span>
+						<meta itemprop='position' content='2'>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<section class='about-company'>
+		<div class='container'>
+			<h2 class='about-company__title title'>Клиенты компании</h2>
+			<div class="page-block__text">
+				<div class="page-block-wrapper">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+						dolor
+						sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+						penatibus et
+						magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis
+						tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+						dolor
+						sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+						penatibus et
+						magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis
+						tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+						dolor
+						sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+						penatibus et
+						magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis
+						tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+						dolor
+						sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+						penatibus et
+						magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis
+						tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Карта -->
+	<div class="clients-map-wrapper">
+		<div class="container">
+			<h2 class="title clients-map-wrapper__title">Наши проекты в Санкт-&nbsp;Петербурге и Ленинградской области</h2>
+			<div class="clients-map__tabs">
+				<button data-tab="tab-1" class="active">Санкт-Петербург</button>
+				<button data-tab="tab-2">Ленинградск. обл.</button>
+				<button data-tab="tab-3">Другие</button>
+			</div>
+			<div class="clients-map" style="background-image: url(assets/img/clients-map.jpg);">
+				<!-- СПБ -->
+				<a href="project.html" class="clients-map__item c-1" data-target="tab-1">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">СПб ГБУЗ «Психиатрическая больница №1 им. П.П. Кащенко»</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Санкт-Петербург</div>
+						<div class="clients-projects__item-subtitle">СПб ГБУЗ «Психиатрическая больница №1 им. П.П. Кащенко»</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<a href="project.html" class="clients-map__item c-2" data-target="tab-1">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">СПб ГКУЗ «Городская психиатрическая больница № 6»</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Санкт-Петербург</div>
+						<div class="clients-projects__item-subtitle">СПб ГКУЗ «Городская психиатрическая больница № 6»</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<a href="project.html" class="clients-map__item c-3" data-target="tab-1">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">СПб ГБУЗ «Городская психиатрическая больница № 7 имени академика
+								И.П.Павлова»</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Санкт-Петербург</div>
+						<div class="clients-projects__item-subtitle">СПб ГБУЗ «Городская психиатрическая больница № 7 имени
+							академика
+							И.П.Павлова»</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<a href="project.html" class="clients-map__item c-4" data-target="tab-1">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">СПб ГКУЗ "Психиатрическая больница Святого Николая Чудотворца"</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Санкт-Петербург</div>
+						<div class="clients-projects__item-subtitle">СПб ГКУЗ "Психиатрическая больница Святого Николая Чудотворца"
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<a href="project.html" class="clients-map__item c-5" data-target="tab-1">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">СПб ГБУЗ «Психоневрологический диспансер Фрунзенского района»</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Санкт-Петербург</div>
+						<div class="clients-projects__item-subtitle">СПб ГБУЗ «Психоневрологический диспансер Фрунзенского района»
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<a href="project.html" class="clients-map__item c-6" data-target="tab-1">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">СПб ГБУЗ "Госпиталь для ветеранов войн"</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Санкт-Петербург</div>
+						<div class="clients-projects__item-subtitle">СПб ГБУЗ "Госпиталь для ветеранов войн"
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<a href="project.html" class="clients-map__item c-7" data-target="tab-1">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">Медико-санитарная часть УФСБ России по городу Санкт-Петербургу и
+								Ленинградской области</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Санкт-Петербург</div>
+						<div class="clients-projects__item-subtitle">Медико-санитарная часть УФСБ России по городу Санкт-Петербургу
+							и
+							Ленинградской области
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<a href="project.html" class="clients-map__item c-8" data-target="tab-1">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">СПб ГБУЗ «Городская туберкулезная больница № 2» </div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Санкт-Петербург</div>
+						<div class="clients-projects__item-subtitle">СПб ГБУЗ «Городская туберкулезная больница № 2»
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+
+				<a href="project.html" class="clients-map__item c-9" data-target="tab-1">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">СПб ГБУЗ "Туберкулёзная больница №8"</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Санкт-Петербург</div>
+						<div class="clients-projects__item-subtitle">СПб ГБУЗ "Туберкулёзная больница №8"
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<a href="project.html" class="clients-map__item c-10" data-target="tab-1">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">СПб ГАУЗ «Хоспис (детский)»</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Санкт-Петербург</div>
+						<div class="clients-projects__item-subtitle">СПб ГАУЗ «Хоспис (детский)»
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<a href="project.html" class="clients-map__item c-11" data-target="tab-1">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">СПб ГБУЗ Городская Покровская больница</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Санкт-Петербург</div>
+						<div class="clients-projects__item-subtitle">СПб ГБУЗ Городская Покровская больница
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<a href="project.html" class="clients-map__item c-12" data-target="tab-1">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">ГБУЗ ЛО "Центр профессиональной патологии"</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Санкт-Петербург</div>
+						<div class="clients-projects__item-subtitle">ГБУЗ ЛО "Центр профессиональной патологии"
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<a href="project.html" class="clients-map__item c-13" data-target="tab-1">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">Медсанчасть АО «Гознак»</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Санкт-Петербург</div>
+						<div class="clients-projects__item-subtitle">Медсанчасть АО «Гознак»
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<a href="project.html" class="clients-map__item c-14" data-target="tab-1">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">Сеть многопрофильных клинико-диагностических центров ООО «Медпомощь
+								24»
+							</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Санкт-Петербург</div>
+						<div class="clients-projects__item-subtitle">Сеть многопрофильных клинико-диагностических центров ООО
+							«Медпомощь
+							24»
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<!-- Выборг -->
+				<a href="project.html" class="clients-map__item c-15" data-target="tab-2">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">ГБУЗ ЛО "Выборгский родильный дом"</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Выборг</div>
+						<div class="clients-projects__item-subtitle">ГБУЗ ЛО "Выборгский родильный дом"</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<!-- Приозёрск -->
+				<a href="project.html" class="clients-map__item c-16" data-target="tab-2">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">ГБУЗ ЛО "Приозерская межрайонная больница"</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Приозёрск</div>
+						<div class="clients-projects__item-subtitle">ГБУЗ ЛО "Приозерская межрайонная больница"</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<!-- Сертолово -->
+				<a href="project.html" class="clients-map__item c-17" data-target="tab-2">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">ГБУЗ ЛО "Сертоловская городская больница"</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Сертолово</div>
+						<div class="clients-projects__item-subtitle">ГБУЗ ЛО "Сертоловская городская больница"</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<!-- Рощино -->
+				<a href="project.html" class="clients-map__item c-18" data-target="tab-2">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">ГБУЗ ЛО "Рощинская межрайонная больница"</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Рощино</div>
+						<div class="clients-projects__item-subtitle">ГБУЗ ЛО "Рощинская межрайонная больница"</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<!-- Ломоносов  -->
+				<a href="project.html" class="clients-map__item c-19" data-target="tab-2">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">ГБУЗ ЛО "Ломоносовская межрайонная больница имени И.Н. Юдченко"</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Ломоносов</div>
+						<div class="clients-projects__item-subtitle">ГБУЗ ЛО "Ломоносовская межрайонная больница имени И.Н. Юдченко"
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<!-- Кириши  -->
+				<a href="project.html" class="clients-map__item c-20" data-target="tab-2">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">ГБУЗ ЛО "Киришская клиническая межрайонная больница"</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Кириши</div>
+						<div class="clients-projects__item-subtitle">ГБУЗ ЛО "Киришская клиническая межрайонная больница"
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<!-- СПБ -->
+				<a href="project.html" class="clients-map__item c-21" data-target="tab-1">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">Ленинградский областной психоневрологический диспансер
+							</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Санкт-Петербург</div>
+						<div class="clients-projects__item-subtitle">Ленинградский областной психоневрологический диспансер
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<!-- Тихвин  -->
+				<a href="project.html" class="clients-map__item c-22" data-target="tab-2">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">ГКУЗ ЛО "Тихвинская психиатрическая больница"</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Тихвин</div>
+						<div class="clients-projects__item-subtitle">ГКУЗ ЛО "Тихвинская психиатрическая больница" </div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<!-- Ульяновка  -->
+				<a href="project.html" class="clients-map__item c-23" data-target="tab-2">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title"> ГКУЗ ЛО "Ульяновская ПБ" </div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Ульяновка</div>
+						<div class="clients-projects__item-subtitle"> ГКУЗ ЛО "Ульяновская ПБ" </div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<!-- СПБ -->
+				<a href="project.html" class="clients-map__item c-24" data-group="group" data-target="tab-1">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">СПб ГБУЗ "Медицинский информационно-аналитический центр"
+							</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Санкт-Петербург</div>
+						<div class="clients-projects__item-subtitle">СПб ГБУЗ "Медицинский информационно-аналитический центр"
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<a href="project.html" class="clients-map__item c-24" data-group="group" data-target="tab-1">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">СПб ГБУЗ "Медицинский информационно-аналитический центр"
+							</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Санкт-Петербург</div>
+						<div class="clients-projects__item-subtitle">СПб ГБУЗ "Медицинский информационно-аналитический центр"
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<a href="project.html" class="clients-map__item c-24" data-group="group" data-target="tab-1">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">СПб ГБУЗ "Медицинский информационно-аналитический центр"
+							</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Санкт-Петербург</div>
+						<div class="clients-projects__item-subtitle">СПб ГБУЗ "Медицинский информационно-аналитический центр"
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<a href="project.html" class="clients-map__item c-24" data-group="group" data-target="tab-1">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">СПб ГБУЗ "Медицинский информационно-аналитический центр"
+							</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Санкт-Петербург</div>
+						<div class="clients-projects__item-subtitle">СПб ГБУЗ "Медицинский информационно-аналитический центр"
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<!-- Лодейное поле -->
+				<a href="project.html" class="clients-map__item c-25" data-target="tab-2">
+					<div class="clients-map__item-icon">
+						<svg class='marker'>
+							<use xlink:href='assets/sprite.svg#marker'></use>
+						</svg>
+						<img src="assets/img/marker-icon.png" alt="icon">
+						<div class="clients-map__item-text">
+							<div class="clients-map__item-title">ЛОГКУЗ "Свирская ПБ"
+							</div>
+						</div>
+					</div>
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Лодейное поле</div>
+						<div class="clients-projects__item-subtitle">ЛОГКУЗ "Свирская ПБ"</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+			</div>
+			<!-- <div class="button clients-map__button">Показать все</div> -->
+		</div>
+	</div>
+	<!-- / карта -->
+
+	<section class="clients-projects">
+		<div class="container">
+			<h2 class="clients-projects__title title">Также наши проекты в других городах</h2>
+			<div class="clients-projects-wrapper">
+				<!-- Новый Уренгой -->
+				<a href="project.html" class="clients-projects__item">
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Новый Уренгой</div>
+						<div class="clients-projects__item-subtitle">Медицинский центр ООО «Семейный доктор»
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<!-- Москва -->
+				<a href="project.html" class="clients-projects__item">
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Москва</div>
+						<div class="clients-projects__item-subtitle">АО «Гос МКБ «Вымпел» им. И.И. Торопова»
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<!-- Электросталь -->
+				<a href="project.html" class="clients-projects__item">
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Электросталь</div>
+						<div class="clients-projects__item-subtitle">Медико-санитарная часть АО «Металлургический завод
+							«Электросталь»
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<!-- Новый Уренгой -->
+				<a href="project.html" class="clients-projects__item">
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Новый Уренгой</div>
+						<div class="clients-projects__item-subtitle">Медицинский центр "Сканер"
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<!-- Воронеж -->
+				<a href="project.html" class="clients-projects__item">
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Воронеж</div>
+						<div class="clients-projects__item-subtitle">Многопрофильная клиника ООО «Клиника семейной медицины»
+						</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<!-- Тулун -->
+				<a href="project.html" class="clients-projects__item">
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Тулун</div>
+						<div class="clients-projects__item-subtitle">Медицинский центр "Народное Здоровье" </div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<!-- Воронеж -->
+				<a href="project.html" class="clients-projects__item">
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Воронеж</div>
+						<div class="clients-projects__item-subtitle">"Клиника Семейной медицины"</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+				<!-- Дружноселье -->
+				<a href="project.html" class="clients-projects__item">
+					<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+					<div class="clients-projects__right">
+						<div class="clients-projects__item-title">г. Дружноселье</div>
+						<div class="clients-projects__item-subtitle">ГКУЗ ЛО «Дружносельская психиатрическая больница»</div>
+						<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+							euismod
+							bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenean</div>
+						<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+						<span class="company__button more-button">
+							<span>Подробнее о проекте</span>
+							<svg class='next'>
+								<use xlink:href='assets/sprite.svg#next'></use>
+							</svg>
+						</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="offer offer-clients margin" style="background-image: url(assets/img/offer-product-2.png);">
+		<div class="container">
+			<div class="offer-wrapper">
+				<div class="offer__right">
+					<h2 class="offer__title">Хотите увидеть, как работает МИС?</h2>
+					<div class="offer__subtitle">Пригласите нас к себе в гости!</div>
+					<div class="offer__form">
+						<div class="offer__form-title">Мы продемонстрируем вам и вашим коллегам возможности медицинской
+							информационной системы!
+							Возможна также дистанционная презентация.</div>
+						<form action="#">
+							<span>
+								<input type="text" name="name" placeholder="ФИО">
+							</span>
+							<span>
+								<input type="text" name="company" placeholder="Организация и должность">
+							</span>
+							<div class="input-wrapper">
+								<span>
+									<input type="tel" name="phone" placeholder="Телефон" required>
+								</span>
+								<span>
+									<input type="email" name="email" placeholder="E-mail" required>
+								</span>
+							</div>
+							<textarea name="message" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+							<div class="offer__form-bottom">
+								<span class="input-file">
+									<svg class='attach'>
+										<use xlink:href='assets/sprite.svg#attach'></use>
+									</svg>
+									<label for="file">Прикрепить файл</label>
+									<input id="file" type="file" style="visibility: hidden;">
+								</span>
+								<div class="submit-button">
+									<input type="submit" value="Оставить заявку">
+								</div>
+							</div>
+							<small>Нажимая на кнопку “Оставить заявку” - вы даете согласие на обработку персональных данных.</small>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-wrapper">
+				<a href="#header" class="scroll logo-wrapper">
+					<img src="assets/img/logo.svg" alt="logo" width="164">
+				</a>
+				<ul class="menu footer__menu">
+					<li><a href="company.html">О компании</a></li>
+					<li><a href="integration.html">Интеграция</a></li>
+					<li><a href="product.html">Продукты</a></li>
+					<li><a href="news.html">Новости</a></li>
+					<li><a href="clients.html">Проекты</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+				<div class="footer__right">
+					<div class="header__col">
+						<button class="button header__button modal__button">Связаться с нами</button>
+						<div class="header__request">
+							<svg class='question'>
+								<use xlink:href='assets/sprite.svg#question'></use>
+							</svg>
+							<span>Заявка в тех.поддержку</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__bottom-left">
+					<a href="#" class="footer__pol">Политика конфидециальности</a>
+				</div>
+				<div class="header__social">
+					<span>Мы в соц.сетях:</span>
+					<div class="header__social-icons">
+						<img src="assets/img/header/icons/inst.svg" alt="icon" width="19">
+						<img src="assets/img/header/icons/telegram.svg" alt="icon" width="20">
+						<img src="assets/img/header/icons/facebook.svg" alt="icon" width="20">
+					</div>
+				</div>
+			</div>
+			<small>1995-2020 Компания Коста. Все права защищены. Копирование материалов сайта только с письменного разрешения
+				администрации
+				сайта. Политика обработки и защиты персональных данных.
+			</small>
+		</div>
+	</footer>
+
+	<div class="popup popup-clients">
+		<div class="popup__content">
+			<div class="popup__close">&times;</div>
+			<a href="project.html" class="clients-projects__item">
+				<div class="clients-projects__left" style="background-image: url(assets/img/projects/1.png);"></div>
+				<div class="clients-projects__right">
+					<div class="clients-projects__item-title">г. Москва</div>
+					<div class="clients-projects__item-subtitle">АО «Гос МКБ «Вымпел» им. И.И. Торопова»</div>
+					<div class="clients-projects__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+						euismod
+						bibendum laoreet. Proin gravida dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Aenean</div>
+					<div class="clients-projects__item-small">Ангиографическая система Innova IGS 530</div>
+					<span class="company__button more-button">
+						<span>Подробнее о проекте</span>
+						<svg class='next'>
+							<use xlink:href='assets/sprite.svg#next'></use>
+						</svg>
+					</span>
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<div class="popup popup-call">
+		<div class="popup__content popup__content-call">
+			<div class="popup__close">&times;</div>
+			<div class="popup__title">Заполните форму и мы свяжемся с&nbsp;Вами</div>
+			<div class="popup__form-wrapper">
+				<form class="popup__form">
+					<div class="input-wrapper">
+						<span>
+							<input type="text" name="name" placeholder="ФИО">
+						</span>
+						<span>
+							<input type="tel" name="tel" placeholder="Телефон" required>
+						</span>
+					</div>
+					<div class="input-wrapper">
+						<div class="submit-button">
+							<input type="submit" value="Оставить заявку">
+						</div>
+						<small>Нажимая на кнопку “Оставить заявку” -
+							<br> вы даете согласие на обработку персональных данных.</small>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-thank">
+		<div class="popup__content popup__content-call">
+			<div class="popup__close">&times;</div>
+			<div class="popup__form-wrapper">
+				<div class="popup__title">Спасибо за заявку! <br>
+					Скоро наш менеджер свяжется с Вами</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.5.0.min.js"
+		integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+
+	<script src='assets/js/vendor.min.js'></script>
+	<!-- Основной js файл -->
+	<script src='assets/js/app.js'></script>
+
+
+</body>
+
+</html>

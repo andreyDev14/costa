@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="assets/css/vendor.min.css">
+	<!-- Основной файл стилей -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.5.0.min.js"
+		integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+	<script src='assets/js/vendor.min.js'></script>
+	<!-- Основной js файл -->
+	<script src='assets/js/app.js'></script>
+
+	<title>Costa - информационные технологии в медицине</title>
+</head>
+
+<body>
+
+	<header id="header" class="header">
+		<div class="header-wrapper">
+			<div class="header__top-wrapper">
+				<div class="container">
+					<div class="header__top">
+						<a href="/" class="scroll logo-wrapper">
+							<img src="assets/img/logo.svg" alt="logo" width="164">
+						</a>
+						<div class="header__right">
+							<div class="header__right-top">
+								<div class="header__search">
+									<input type="search" placeholder="Поиск">
+									<svg class='search'>
+										<use xlink:href='assets/sprite.svg#search'></use>
+									</svg>
+								</div>
+								<div class="header__col header__col-first">
+									<a class="header__tel" href="tel:+78123200607">
+										<svg class='phone'>
+											<use xlink:href='assets/sprite.svg#phone'></use>
+										</svg>
+										<span>+7 (812) 320-06-07</span>
+									</a>
+									<div class="header__social">
+										<span>Мы в соц.сетях:</span>
+										<div class="header__social-icons">
+											<img src="assets/img/header/icons/inst.svg" alt="icon" width="19">
+											<img src="assets/img/header/icons/telegram.svg" alt="icon" width="20">
+											<img src="assets/img/header/icons/facebook.svg" alt="icon" width="20">
+										</div>
+									</div>
+								</div>
+								<div class="header__col">
+									<button class="button header__button modal__button">Связаться с нами</button>
+									<div class="header__request">
+										<svg class='question'>
+											<use xlink:href='assets/sprite.svg#question'></use>
+										</svg>
+										<span class="modal__button">Заявка в тех.поддержку</span>
+									</div>
+								</div>
+								<a href="#" class="menu-link">
+									<span class="menu-lines"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom-wrapper">
+				<div class="container">
+					<div class="header__bottom">
+						<ul class="menu header__menu">
+							<li>
+								<a href="company.html">
+									<img src="assets/img/header/icons/1.svg" class="header__menu-icon" alt="icon" width="19">
+									<span>О компании</span>
+								</a>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="product.html">
+									<img src="assets/img/header/icons/2.svg" class="header__menu-icon" alt="icon" width="25">
+									<span>Продукты</span>
+								</a>
+								<ul class="sub-menu">
+									<li><a href="product.html">МИС "Авиценна"</a></li>
+									<li><a href="product.html">Государственный регистр
+											больных сахарным диабетом региона</a></li>
+									<li><a href="product.html">Учет медицинских
+											свидетельств о рождении и смерти</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="clients.html">
+									<img src="assets/img/header/icons/3.svg" class="header__menu-icon" alt="icon" width="22">
+									<span>Проекты</span>
+								</a>
+							</li>
+							<li>
+								<a href="integration.html">
+									<img src="assets/img/header/icons/4.svg" class="header__menu-icon" alt="icon" width="22">
+									<span>Интеграция</span>
+								</a>
+							</li>
+							<li>
+								<a href="news.html">
+									<img src="assets/img/header/icons/5.svg" class="header__menu-icon" alt="icon" width="23">
+									<span>Новости</span>
+								</a>
+							</li>
+							<li>
+								<a href="contacts.html">
+									<img src="assets/img/header/icons/6.svg" class="header__menu-icon" alt="icon" width="20">
+									<span>Контакты</span>
+								</a>
+							</li>
+						</ul>
+						<div class="header__bottom_mobile">
+							<div class="header__search">
+								<input type="search" placeholder="Поиск">
+								<svg class='search'>
+									<use xlink:href='assets/sprite.svg#search'></use>
+								</svg>
+							</div>
+							<div class="header__col">
+								<a class="header__tel" href="tel:+78123200607">
+									<svg class='phone'>
+										<use xlink:href='assets/sprite.svg#phone'></use>
+									</svg>
+									<span>+7 (812) 320-06-07</span>
+								</a>
+								<div class="header__social">
+									<span>Мы в соц.сетях:</span>
+									<div class="header__social-icons">
+										<img src="assets/img/header/icons/inst.svg" alt="icon" width="19">
+										<img src="assets/img/header/icons/telegram.svg" alt="icon" width="20">
+										<img src="assets/img/header/icons/facebook.svg" alt="icon" width="12">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="product project-block">
+		<div class="container">
+			<div class="product-wrapper">
+				<div class="product__left">
+					<div class="crumbs">
+						<div class="container">
+							<ul itemscope='' itemtype='http://schema.org/BreadcrumbList'>
+								<li itemscope='' itemprop='itemListElement' itemtype='http://schema.org/ListItem'>
+									<a rel='nofollow' itemprop='item' href='#'>
+										<span itemprop='name'>Главная</span>
+										<meta itemprop='position' content='1'>
+									</a>
+								</li>
+								<li itemscope='' itemprop='itemListElement' itemtype='http://schema.org/ListItem'>
+									<a rel='nofollow' itemprop='item' href='#'>
+										<span itemprop='name'>Проекты</span>
+										<meta itemprop='position' content='2'>
+									</a>
+								</li>
+								<li itemscope='' itemprop='itemListElement' itemtype='http://schema.org/ListItem'>
+									<a itemprop='item' href='#'>
+										<span itemprop='name'>СПб ГБУЗ «Психиатрическая больница №1 им. П.П. Кащенко»</span>
+										<meta itemprop='position' content='3'>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<img src="assets/img/project-block-img.png" alt="img" class="project-block__img">
+					<h2 class="project-block__title">СПб ГБУЗ «Психиатрическая больница №1 им. П.П. Кащенко»</h2>
+					<a href="www.kashenko.ru" class="project-block__subtitle">www.kashenko.ru</a>
+					<div class="project-block__text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+							dolor
+							sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+							penatibus et
+							magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate,
+							felis
+							tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+							dolor
+							sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+							penatibus
+							et
+							magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate,
+							felis
+							tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+					</div>
+					<a href="#feedback" class="scroll button page-block__button"> Смотреть отзыв</a>
+				</div>
+			</div>
+		</div>
+		<div class="product__img" style="background-image: url(assets/img/project-img.png);"></div>
+	</section>
+
+	<section class='task page-project'>
+		<div class='container'>
+			<h2 class='task__title title'>Задачи проекта</h2>
+			<div class='task-wrapper'>
+				<div class="task__item">
+					<div class="page-block__text">
+						<div class="page-block-wrapper">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+								dolor
+								sit amet lacus</p>
+							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
+								gravida dolor
+								sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar</p>
+							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
+								gravida dolor
+								sit amet lacus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+						</div>
+					</div>
+				</div>
+				<div class="task__item">
+					<div class="page-block__text">
+						<div class="page-block-wrapper">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+								dolor
+								sit amet lacus</p>
+							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
+								gravida
+								dolor
+								sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar</p>
+							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
+								gravida
+								dolor
+								sit amet lacus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="feedback__item" id="feedback">
+				<div class="feedback__left">
+					<div class="feedback__item-name">Кожевникова Валерия Николаевна</div>
+					<div class="feedback__item-pos">Главный врач ПНД Фрунзенского района СПб</div>
+					<div class="feedback__item-text">
+						Здесь текст - отзыв от клиента....
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+						dolor sit
+						amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et
+						magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis
+						tellus
+						mollis orci, sed rhoncus sapien nunc eget
+					</div>
+				</div>
+				<div class="feedback__right">
+					<div class="feedback__img" style="background-image: url(assets/img/project__img.png);">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="done margin">
+		<div class="done-bg"></div>
+		<div class="done__img" style="background-image: url(assets/img/project-img-3.png);"></div>
+		<div class="container">
+			<div class="done-wrapper">
+				<div class="done__right">
+					<h2 class="done__title title">Что было сделано</h2>
+					<div class="done__item-wrapper">
+						<div class="done__item">
+							Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum
+							sociis
+							natoque penatibus et magnis dis parturient montesProin gravida dolor sit amet lacus accumsan et viverra
+							justo
+							commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,
+							nascetur
+							ridiculus mus.
+						</div>
+						<div class="done__item">
+							Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum
+							sociis
+							natoque penatibus et magnis dis parturient montesProin gravida dolor sit amet lacus accumsan et viverra
+							justo
+							commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,
+							nascetur
+							ridiculus mus.
+						</div>
+						<div class="done__item">
+							Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum
+							sociis
+							natoque penatibus et magnis dis parturient montesProin gravida dolor sit amet lacus accumsan et viverra
+							justo
+							commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,
+							nascetur
+							ridiculus mus.
+						</div>
+						<div class="done__item">
+							Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum
+							sociis
+							natoque penatibus et magnis dis parturient montesProin gravida dolor sit amet lacus accumsan et viverra
+							justo
+							commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes,
+							nascetur
+							ridiculus mus.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class='number'>
+		<div class='container'>
+			<h2 class='number__title title'>Цифры проекта</h2>
+			<div class='number-wrapper number-wrapper-first'>
+				<div class="number__left">
+					<div class="number__item number__item_big">
+						<div class="number__item-count">
+							<div class="number__item-count-bg"><span>20</span></div>
+						</div>
+						<div class="number__item-bottom">
+							<div class="number__item-title">Количество АРМ</div>
+							<div class="number__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+								bibendum
+								laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+								Lorem sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
+								amet
+								lacus
+								accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</div>
+						</div>
+					</div>
+				</div>
+				<div class="number__right">
+					<div class="number__item">
+						<div class="number__item-count">
+							<div class="number__item-count-bg"><span>5000</span></div>
+						</div>
+						<div class="number__item-bottom">
+							<div class="number__item-title"> Количество медицинских документов в период
+							</div>
+							<div class="number__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+								bibendum
+								laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+							</div>
+						</div>
+					</div>
+					<div class="number__item">
+						<div class="number__item-count">
+							<div class="number__item-count-bg"><span>2056</span></div>
+						</div>
+						<div class="number__item-bottom">
+							<div class="number__item-title"> Количество пациентов</div>
+							<div class="number__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+								bibendum
+								laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+							</div>
+						</div>
+					</div>
+					<div class="number__item">
+						<div class="number__item-count">
+							<div class="number__item-count-bg"><span>1000</span></div>
+						</div>
+						<div class="number__item-bottom">
+							<div class="number__item-title"> Количество медицинских документов в период</div>
+							<div class="number__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+								bibendum
+								laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+							</div>
+						</div>
+					</div>
+					<div class="number__item">
+						<div class="number__item-count">
+							<div class="number__item-count-bg"><span>30</span></div>
+						</div>
+						<div class="number__item-bottom">
+							<div class="number__item-title"> Количество пациентов</div>
+							<div class="number__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+								bibendum
+								laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="number-wrapper number-wrapper-second">
+				<div class="number__right">
+					<div class="number__item number__item-left">
+						<div class="number__item-count">
+							<div class="number__item-count-bg"><span>5000</span></div>
+						</div>
+						<div class="number__item-bottom">
+							<div class="number__item-title"> Количество медицинских документов в период
+							</div>
+							<div class="number__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+								bibendum
+								laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+							</div>
+						</div>
+					</div>
+					<div class="number__item number__item-right">
+						<div class="number__item-count">
+							<div class="number__item-count-bg"><span>2056</span></div>
+						</div>
+						<div class="number__item-bottom">
+							<div class="number__item-title"> Количество пациентов</div>
+							<div class="number__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+								bibendum
+								laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="page-block page-block-project">
+		<div class="container">
+			<h2 class="title page-block__title">Эффекты от внедрения МИС</h2>
+			<div class="page-block__text">
+				<div class="page-block-wrapper">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+						dolor
+						sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+						penatibus et
+						magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis
+						tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+						dolor
+						sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+						penatibus et
+						magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis
+						tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+						dolor
+						sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+						penatibus et
+						magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis
+						tellus mollis orci, sed rhoncus sapien nunc eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Aenean
+						euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
+						sodales
+						pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam
+						fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+						dolor
+						sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+						penatibus et
+						magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis
+						tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+						dolor
+						sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+						penatibus et
+						magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis
+						tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="director">
+		<div class="container">
+			<div class="director-wrapper">
+				<div class="director__left">
+					<div class="director__img" style="background-image: url(assets/img/page-project-img.png);"></div>
+				</div>
+				<div class="director__right">
+					<h2 class="director__item-name">Мария Леонидовна Абрамова</h2>
+					<div class="director__item-pos">Генеральный директор компании ЗАО "Коста" </div>
+					<div class="director__item-text">
+						<p>Создание медицинской информационной системы – это сложный процесс, зависящий от множества факторов. Мы
+							являемся
+							не
+							просто разработчиком информационной системы, а прежде всего партнером, задача которого не просто «внедрить
+							МИС», а
+							действительно повысить эффективность процессов медицинской организации, обеспечить врачей удобными
+							современными
+							инструментами, а пациентов сервисами.</p>
+
+						<p>Мы несем ответственность за включение медицинской организации в Единый Цифровой Контур, исполнение
+							требований
+							Комитета Здравоохранения и позиции медицинской организации в рейтингах Электронного Здравоохранения</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="offer-project margin" style="background-image: url(assets/img/project-offer-bg.jpg);">
+		<div class="container">
+			<div class="offer-project-wrapper">
+				<div class="offer-project-block">
+					<h2 class="offer-project__title title">
+						Сколько стоит МИС?
+					</h2>
+					<div class="offer-project__text">Пройдите небольшой online опрос и мы рассчитаем предварительную стоимость
+						Вашей
+						будущей
+						медицинской информационной системы. </div>
+					<div class="offer-project__small">
+						Время ответа на вопросы не более 7 минут
+					</div>
+					<button class="button offer-project__button">Узнать стоимость</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-wrapper">
+				<a href="#header" class="scroll logo-wrapper">
+					<img src="assets/img/logo.svg" alt="logo" width="164">
+				</a>
+				<ul class="menu footer__menu">
+					<li><a href="company.html">О компании</a></li>
+					<li><a href="integration.html">Интеграция</a></li>
+					<li><a href="product.html">Продукты</a></li>
+					<li><a href="news.html">Новости</a></li>
+					<li><a href="clients.html">Проекты</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+				<div class="footer__right">
+					<div class="header__col">
+						<button class="button header__button modal__button">Связаться с нами</button>
+						<div class="header__request">
+							<svg class='question'>
+								<use xlink:href='assets/sprite.svg#question'></use>
+							</svg>
+							<span>Заявка в тех.поддержку</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__bottom-left">
+					<a href="#" class="footer__pol">Политика конфидециальности</a>
+				</div>
+				<div class="header__social">
+					<span>Мы в соц.сетях:</span>
+					<div class="header__social-icons">
+						<img src="assets/img/header/icons/inst.svg" alt="icon" width="19">
+						<img src="assets/img/header/icons/telegram.svg" alt="icon" width="20">
+						<img src="assets/img/header/icons/facebook.svg" alt="icon" width="20">
+					</div>
+				</div>
+			</div>
+			<small>1995-2020 Компания Коста. Все права защищены. Копирование материалов сайта только с письменного разрешения
+				администрации
+				сайта. Политика обработки и защиты персональных данных.
+			</small>
+		</div>
+	</footer>
+
+	<div class="popup popup-call">
+		<div class="popup__content popup__content-call">
+			<div class="popup__close">&times;</div>
+			<div class="popup__title">Заполните форму и мы свяжемся с&nbsp;Вами</div>
+			<div class="popup__form-wrapper">
+				<form class="popup__form">
+					<div class="input-wrapper">
+						<span>
+							<input type="text" name="name" placeholder="ФИО">
+						</span>
+						<span>
+							<input type="tel" name="tel" placeholder="Телефон" required>
+						</span>
+					</div>
+					<div class="input-wrapper">
+						<div class="submit-button">
+							<input type="submit" value="Оставить заявку">
+						</div>
+						<small>Нажимая на кнопку “Оставить заявку” -
+							<br> вы даете согласие на обработку персональных данных.</small>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup-thank">
+		<div class="popup__content popup__content-call">
+			<div class="popup__close">&times;</div>
+			<div class="popup__form-wrapper">
+				<div class="popup__title">Спасибо за заявку! <br>
+					Скоро наш менеджер свяжется с Вами</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
